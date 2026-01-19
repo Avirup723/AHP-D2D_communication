@@ -28,7 +28,7 @@ FAST_FADING_SIGMA_DB0 = {"5G": 0.8,  "LTE": 1.6,  "D2D": 2.2}
 N_DIV = {"5G": 4, "LTE": 2, "D2D": 1}
 
 SLICE_SENS_COEF = {"eMBB": 1.0, "URLLC": 1.6, "mMTC": 2.0}
-# sadded mall penalty to lift ultra-low BER into a visible range
+# small penalty to lift ultra-low BER into a visible range
 SLICE_EXTRA_PENALTY_DB = {"eMBB": 0.0, "URLLC": 0.8, "mMTC": 1.2}
 
 def modulation_penalty_db(M: int) -> float:

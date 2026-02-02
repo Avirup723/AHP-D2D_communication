@@ -254,7 +254,7 @@ for user_type in slice_types:
             "speed": [],
             "throughput": [], "ber": [], "latency": [], "jitter": [],
             "throughput_ci": [], "ber_ci": [], "latency_ci": [], "jitter_ci": [],
-            "handover": [], "ho_pairs": []
+            "handover": []
         }
     for m in ["Our method", "RSRP-based method"]:
         results_speed[m][user_type] = empty_metrics()
@@ -281,7 +281,6 @@ for user_type in slice_types:
             res["latency_ci"].append(float(ci[2]))
             res["jitter_ci"].append(float(ci[3]))
             res["handover"].append(int(ho_total))
-            res["ho_pairs"].append(dict(ho_pairs))
 
 
 # ===================== DIFF. USERS =====================
@@ -295,7 +294,7 @@ for user_type in slice_types:
             "users": [],
             "throughput": [], "ber": [], "latency": [], "jitter": [],
             "throughput_ci": [], "ber_ci": [], "latency_ci": [], "jitter_ci": [],
-            "handover": [], "ho_pairs": []
+            "handover": []
         }
 
     for m in ["Our method", "RSRP-based method"]:
@@ -323,7 +322,6 @@ for user_type in slice_types:
             res["latency_ci"].append(float(ci[2]))
             res["jitter_ci"].append(float(ci[3]))
             res["handover"].append(int(ho_total))
-            res["ho_pairs"].append(dict(ho_pairs))
 
 print("[done] Simulation complete.")
 
